@@ -395,7 +395,7 @@
           }
         }
       ],
-      "name": "Take 01",
+      "name": "Take01",
       "samplers": [
         {
           "input": 15,
