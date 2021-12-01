@@ -39,17 +39,17 @@
 
     <!-- a-frame scene -->
     <a-scene
-      vr-mode-ui="enabled: false;"
+      <!--vr-mode-ui="enabled: false;"
       renderer="logarithmicDepthBuffer: true;"
       embedded
-      arjs="trackingMethod: best; sourceType: webcam;debugUIEnabled: false;">
+      arjs="trackingMethod: best; sourceType: webcam;debugUIEnabled: false;"-->>
 	  <a-assets>
 		<a-assets-item id="mariposa" src="/butterfly/scene.gltf">
 	  </a-assets>
       <!-- a-nft is the anchor that defines an Image Tracking entity -->
       <!-- on 'url' use the path to the Image Descriptors created before. -->
       <!-- the path should end with the name without the extension e.g. if file is trex.fset' the path should end with trex -->
-      <a-nft
+      <!--<a-nft
         type="nft"
         url="/butterfly/marcador"
         smooth="true"
@@ -58,7 +58,7 @@
         smoothThreshold="5">
           <!-- as a child of the a-nft entity, you can define the content to show. here's a GLTF model entity -->
           <a-entity gltf-model="#mariposa" scale="1.23 1.23 1.23" position="75 75 0" rotation="270 0 0" animation-mixer="clip:Take 01"></a-entity>
-      </a-nft>
+      <!--</a-nft>-->
       <!-- static camera that moves according to the device movemenents -->
       <a-entity camera></a-entity>
     </a-scene>
